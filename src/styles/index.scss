@@ -11,3 +11,26 @@
 @import "featureSection";
 @import "heroSection";
 @import "nav";
+
+.Footer {
+  color: hsl(0, 0, 60);
+  padding: 0 16px 24px;
+  text-align: center;
+  margin: 0 auto;
+  max-width: 1280px;
+
+  @include min-width("sm") {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.Footer a {
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+.Footer__text {
+  margin: 0;
+}
