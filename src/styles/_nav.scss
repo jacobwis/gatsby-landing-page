@@ -1,0 +1,104 @@
+.Nav {
+  background-color: var(--primary-color);
+  z-index: 2;
+  position: relative;
+}
+
+.Nav__inner {
+  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  height: 75px;
+  margin: 0 auto;
+  max-width: 1280px;
+  padding: 0 16px;
+
+  @include min-width("md") {
+    display: flex;
+  }
+}
+
+.Nav__logo-wrapper {
+  text-align: center;
+
+  @include min-width("md") {
+    text-align: left;
+  }
+}
+
+.Nav__logo {
+  height: 30px;
+}
+
+.Nav__btn-wrapper {
+  @include min-width("md") {
+    display: none;
+  }
+}
+
+.Nav__btn {
+  background-color: transparent;
+  border: 0;
+  color: #fff;
+  font-size: 32px;
+  line-height: 1;
+  padding: 2px 0 0;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.Nav__mobile-menu {
+  background-color: var(--primary-color);
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -500px;
+  transition: top 200ms ease-in-out;
+  padding: 0 16px 16px;
+  z-index: 1;
+
+  @include min-width("md") {
+    display: none;
+  }
+}
+
+.Nav__mobile-menu--open {
+  top: 75px;
+}
+
+.Nav__mobile-menu-link {
+  color: #fff;
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  text-decoration: none;
+  margin-bottom: 20px;
+}
+
+.Nav__links {
+  align-items: center;
+  display: none;
+  flex: 1;
+  padding-left: 50px;
+
+  @include min-width("md") {
+    display: flex;
+  }
+
+  @include min-width("lg") {
+    justify-content: space-between;
+  }
+}
+
+.Nav__link {
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
+  margin-right: 36px;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
