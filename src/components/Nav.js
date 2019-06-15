@@ -46,7 +46,7 @@ class Nav extends React.Component {
                 <a className="Nav__link" href="#">
                   Sign In
                 </a>
-                <a className="Button">Sign Up</a>
+                <a className="Button Button--white">Sign Up</a>
               </div>
             </div>
           </div>
@@ -67,7 +67,7 @@ class Nav extends React.Component {
           <a className="Nav__mobile-menu-link" href="#">
             Sign In
           </a>
-          <a className="Button">Sign Up</a>
+          <a className="Button Button--white">Sign Up</a>
         </div>
       </React.Fragment>
     )
