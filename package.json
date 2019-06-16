@@ -8,8 +8,9 @@
     "build": "gatsby build",
     "dev": "gatsby --host 0.0.0.0 develop",
     "format": "prettier --write src/**/*.{js,jsx}",
-    "start": "npm run develop",
-    "serve": "gatsby serve"
+    "start": "gatsby serve",
+    "serve": "gatsby serve",
+    "now-build": "gatsby build"
   },
   "dependencies": {
     "gatsby": "^2.9.4",

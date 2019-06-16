@@ -19,13 +19,18 @@ const IndexPage = () => (
       <BrandSection />
       <FeatureSection />
       <div className="Footer">
-        <div>
-          <p className="Footer__text">
-            Created by <a href="#">Jacob Wisniewski</a>
-          </p>
-        </div>
-        <div>
-          <a href="#">View Code</a>
+        <div className="Footer__inner">
+          <div>
+            <p className="Footer__text">
+              Created By{" "}
+              <a href="https://github.com/wisniewskij26">Jacob Wisniewski</a>
+            </p>
+          </div>
+          <div>
+            <a href="https://github.com/wisniewskij26/gatsby-landing-page">
+              View Code
+            </a>
+          </div>
         </div>
       </div>
     </div>
